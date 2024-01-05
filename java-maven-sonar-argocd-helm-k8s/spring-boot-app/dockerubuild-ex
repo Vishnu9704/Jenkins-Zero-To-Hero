@@ -18,7 +18,7 @@ pipeline {
                 echo 'Building Docker image'
                 script {
                     // Build the Docker image
-                    docker.build('your-docker-image:latest', '-f path/to/Dockerfile .')
+                    docker.build('your-docker-image:latest', '-f java-maven-sonar-argocd-helm-k8s/spring-boot-app/ .')
                 }
             }
         }
